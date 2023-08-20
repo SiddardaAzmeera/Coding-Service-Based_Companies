@@ -40,7 +40,10 @@ def get_biggest(n, m):
 
 
 def diff_of_sum(n, m):
-    return abs(((m * (m + 1)) // 2) - (sum(n * i for i in range(1, get_biggest(n, m) + 1)) * 2))
+    total_sum = (m * (m + 1)) // 2
+    multiple = get_biggest(n, m)
+    divisible_sum = ((multiple * (multiple + 1)) // 2) * n
+    return abs(total_sum - (divisible_sum * 2))
 
 
 n = int(input())
