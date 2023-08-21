@@ -35,7 +35,7 @@ Output:
 
 def ops(string):
     length = len(string)
-    result = int(string[:1])
+    result = int(string[0])
     i = 1
     while i < length:
         operation = string[i]
