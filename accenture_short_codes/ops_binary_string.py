@@ -38,8 +38,8 @@ def ops(string):
     result = int(string[:1])
     i = 1
     while i < length:
-        operation = string[i:i + 1]
-        value = int(string[i + 1: i + 2])
+        operation = string[i]
+        value = int(string[i + 1])
         if operation == 'A':
             result &= value
         elif operation == 'B':
